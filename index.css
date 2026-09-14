@@ -342,6 +342,7 @@ body {
   padding: 0;
   overflow: hidden auto;
   border-top: 4px solid #6aa84f;
+  background: #d6e0eb;
 }
 
 .study-review-header {
@@ -1038,7 +1039,8 @@ body {
 .study-review-question {
   padding: 16px;
   border-left: 4px solid #6aa84f;
-  background: #f0fdf4;
+  background: #e8eef5;
+  color: #1e293b;
   line-height: 1.6;
 }
 
@@ -1056,14 +1058,18 @@ body {
 
 body.dark-mode .study-dashboard-modal,
 body.dark-mode .study-review-modal {
-  background: #18221c;
+  background: #182431;
   color: #e5e7eb;
   border-color: #46544b;
   box-shadow: 0 20px 50px rgba(2, 6, 23, 0.5);
 }
 
+body.dark-mode .study-review-modal {
+  background: #425d77;
+}
+
 body.dark-mode .study-review-header {
-  background: linear-gradient(135deg, #213326, #202d38);
+  background: linear-gradient(135deg, #253447, #202d38);
   border-color: #405247;
 }
 
@@ -1073,19 +1079,19 @@ body.dark-mode .study-review-label {
 }
 
 body.dark-mode .study-review-status {
-  background: #294633;
+  background: #29415a;
   border-color: #52785b;
   color: #bbf7d0;
 }
 
 body.dark-mode .study-review-question {
-  background: #263a2c;
+  background: #2a4056;
   border-color: #46604d;
   color: #e5eee8;
 }
 
 body.dark-mode .study-review-modal .study-review-actions {
-  background: #1d2921;
+  background: #202f40;
   border-color: #405247;
 }
 
@@ -1094,7 +1100,7 @@ body.dark-mode .study-explanation {
 }
 
 body.dark-mode .study-dashboard-overlay {
-  background: rgba(2, 8, 5, 0.72);
+  background: rgba(2, 8, 18, 0.72);
 }
 
 body.dark-mode .study-dashboard-header p,
@@ -1109,13 +1115,13 @@ body.dark-mode .study-todo-header span {
 body.dark-mode .study-dashboard-columns section,
 body.dark-mode .study-mistakes,
 body.dark-mode .study-day-panel {
-  background: #202c24;
+  background: #243548;
   border-color: #405247;
   box-shadow: none;
 }
 
 body.dark-mode .study-stat-grid > div {
-  background: #202c24;
+  background: #243548;
   border-color: #405247;
   box-shadow: none;
 }
@@ -1136,14 +1142,14 @@ body.dark-mode .study-goal-grid > div {
 }
 
 body.dark-mode .study-history-card {
-  background: #1b2920;
+  background: #213447;
   border-color: #46604d;
   box-shadow: none;
 }
 
 body.dark-mode .study-history-grid > div,
 body.dark-mode .study-history-topic {
-  background: #26352c;
+  background: #2a3c50;
   border-color: #405247;
 }
 
@@ -1163,7 +1169,7 @@ body.dark-mode .study-history-metrics {
 }
 
 body.dark-mode .study-history-metrics span {
-  background: #34463a;
+  background: #33495f;
 }
 
 body.dark-mode .study-review-question {
@@ -1173,37 +1179,37 @@ body.dark-mode .study-review-question {
 body.dark-mode .study-stat-grid > div,
 body.dark-mode .study-close-btn,
 body.dark-mode .study-review-actions button {
-  background: #29352e;
+  background: #2d4053;
   color: #e5e7eb;
   border-color: #526258;
 }
 
 body.dark-mode .study-review-actions button.reviewed {
-  background: #6aa84f;
-  border-color: #6aa84f;
+  background: #4f9ac2;
+  border-color: #4f9ac2;
   color: #102015;
 }
 
 body.dark-mode .study-dashboard-actions > button:not(.study-close-btn) {
-  background: #6aa84f;
-  border-color: #6aa84f;
+  background: #4f9ac2;
+  border-color: #4f9ac2;
   color: #102015;
 }
 
 body.dark-mode .study-dashboard-actions > button:not(.study-close-btn):hover {
-  background: #82bd66;
-  border-color: #82bd66;
+  background: #6cb8e2;
+  border-color: #6cb8e2;
 }
 
 body.dark-mode .study-dashboard-actions > .import-btn {
-  background: #29352e;
+  background: #2d4053;
   color: #b7e0a2;
   border-color: #526258;
 }
 
 body.dark-mode .study-dashboard-actions > .import-btn:hover {
-  background: #344238;
-  border-color: #6aa84f;
+  background: #3a5267;
+  border-color: #4f9ac2;
 }
 
 body.dark-mode .study-dashboard-actions > .study-close-btn {
@@ -1216,7 +1222,7 @@ body.dark-mode .study-mistakes {
 }
 
 body.dark-mode .study-history-card {
-  background: linear-gradient(135deg, rgba(31, 54, 39, 0.9) 0%, rgba(20, 30, 38, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(35, 57, 78, 0.9) 0%, rgba(20, 30, 38, 0.9) 100%);
   border-color: #51695d;
 }
 
@@ -1225,13 +1231,13 @@ body.dark-mode .study-history-date {
 }
 
 body.dark-mode .study-history-date input {
-  background: #29352e;
+  background: #2d4053;
   color: #e5e7eb;
   border-color: #526258;
 }
 
 body.dark-mode .study-history-grid > div {
-  background: #29352e;
+  background: #2d4053;
   border-color: #526258;
 }
 
@@ -1240,7 +1246,7 @@ body.dark-mode .study-history-grid strong {
 }
 
 body.dark-mode .study-history-topic {
-  background: rgba(41, 53, 46, 0.7);
+  background: rgba(45, 64, 83, 0.7);
   border-color: #526258;
 }
 
@@ -1259,13 +1265,13 @@ body.dark-mode .study-day-panel {
 
 body.dark-mode .study-day-header input,
 body.dark-mode .study-goal-grid input {
-  background: #29352e;
+  background: #2d4053;
   color: #e5e7eb;
   border-color: #526258;
 }
 
 body.dark-mode .study-day-controls button {
-  background: #29352e;
+  background: #2d4053;
   color: #e5e7eb;
   border-color: #526258;
 }
@@ -1277,7 +1283,7 @@ body.dark-mode .study-list-row {
 }
 
 body.dark-mode .study-todo-actions button {
-  background: #29352e;
+  background: #2d4053;
   color: #e5e7eb;
   border-color: #526258;
 }
@@ -1287,7 +1293,7 @@ body.dark-mode .study-todo-row .completed {
 }
 
 body.dark-mode .study-progress-track {
-  background: #37463b;
+  background: #3c5265;
 }
 
 body.dark-mode .study-goal-grid label,
@@ -1300,14 +1306,14 @@ body.dark-mode .study-filter-grid label {
 }
 
 body.dark-mode .study-filter-grid select {
-  background: #29352e;
+  background: #2d4053;
   color: #e5e7eb;
   border-color: #526258;
 }
 
 body.dark-mode .study-review-question {
-  background: #d9f2df;
-  color: #173322;
+  background: #314b64;
+  color: #e5edf5;
 }
 
 body.dark-mode .wrong-answer {
@@ -1316,13 +1322,129 @@ body.dark-mode .wrong-answer {
 }
 
 body.dark-mode .right-answer {
-  background: #1d3b29;
+  background: #24415a;
   color: #bbf7d0;
 }
 
 body.dark-mode .study-explanation {
   background: #1e3448;
   color: #bfdbfe;
+}
+
+.study-review-modal {
+  border: 1px solid #b8c7d6;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.28), 0 0 0 4px rgba(148, 163, 184, 0.12);
+}
+
+.study-review-header {
+  padding: 24px 26px 20px;
+}
+
+.study-review-header h2 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.study-review-status {
+  box-shadow: 0 4px 12px rgba(22, 101, 52, 0.08);
+}
+
+.study-review-question-block,
+.study-answer-grid,
+.study-explanation {
+  margin-left: 26px;
+  margin-right: 26px;
+}
+
+.study-review-question {
+  font-size: 15px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.48), 0 8px 18px rgba(71, 85, 105, 0.08);
+}
+
+.study-answer {
+  min-height: 76px;
+  justify-content: center;
+  box-shadow: 0 6px 14px rgba(71, 85, 105, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.study-answer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(71, 85, 105, 0.12);
+}
+
+.study-explanation {
+  box-shadow: 0 6px 14px rgba(59, 130, 246, 0.06);
+}
+
+.study-review-modal .study-review-actions {
+  gap: 10px;
+  padding: 18px 26px 22px;
+}
+
+.study-review-modal .study-review-actions button {
+  min-height: 38px;
+  padding: 8px 13px;
+  font-weight: 600;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.study-review-modal .study-review-actions button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12);
+}
+
+.study-review-modal .study-review-actions button.save {
+  background: #166534;
+  border-color: #166534;
+  color: #ffffff;
+}
+
+body.dark-mode .study-review-modal {
+  border-color: #6a8299;
+  box-shadow: 0 24px 70px rgba(2, 6, 23, 0.58), 0 0 0 4px rgba(125, 211, 252, 0.08);
+}
+
+body.dark-mode .study-review-status {
+  box-shadow: 0 4px 12px rgba(2, 6, 23, 0.2);
+}
+
+body.dark-mode .study-review-question {
+  border-color: #7690aa;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 8px 18px rgba(2, 6, 23, 0.18);
+}
+
+body.dark-mode .study-answer {
+  box-shadow: 0 6px 14px rgba(2, 6, 23, 0.16);
+}
+
+body.dark-mode .study-review-modal .study-review-actions button.save {
+  background: #4f9ac2;
+  border-color: #4f9ac2;
+  color: #071521;
+}
+
+@media (max-width: 700px) {
+  .study-review-header,
+  .study-review-modal .study-review-actions {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .study-review-question-block,
+  .study-answer-grid,
+  .study-explanation {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .study-answer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .study-review-modal .study-review-actions button {
+    flex: 1 1 140px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -2942,13 +3064,13 @@ body.dark-mode .api-key-field small {
 body.dark-mode .api-key-close:hover,
 body.dark-mode .api-key-close:focus-visible {
   border-color: #526258;
-  background: #29352e;
+  background: #2d4053;
   color: #ffffff;
 }
 
 body.dark-mode .api-key-option {
   border-color: #405247;
-  background: #202c24;
+  background: #243548;
 }
 
 body.dark-mode .api-key-divider {
@@ -2967,7 +3089,7 @@ body.dark-mode .api-key-field label {
 
 body.dark-mode .api-key-input-wrap {
   border-color: #526258;
-  background: #29352e;
+  background: #2d4053;
 }
 
 body.dark-mode .api-key-input-wrap input {
@@ -2975,12 +3097,12 @@ body.dark-mode .api-key-input-wrap input {
 }
 
 body.dark-mode .api-key-input-wrap button {
-  background: #34463a;
+  background: #33495f;
   color: #bbf7d0;
 }
 
 body.dark-mode .api-key-actions .cancel {
-  background: #29352e;
+  background: #2d4053;
   color: #e5e7eb;
   border-color: #526258;
 }
@@ -3040,7 +3162,7 @@ body.dark-mode .exam-option:hover {
 }
 
 body.dark-mode .search-box {
-  background: #2a2a2a;
+  background: #2d4053;
 }
 
 body.dark-mode .search-box input {
@@ -3062,7 +3184,7 @@ body.dark-mode .connector-toggle {
 }
 
 body.dark-mode .connector-toggle:hover {
-  background: #2a2a2a;
+  background: #33495f;
 }
 
 body.dark-mode svg path {
@@ -3090,13 +3212,13 @@ body.dark-mode .note-editor.arrow-right::after {
 }
 
 body.dark-mode .youtube-input {
-  background: #2a2a2a;
+  background: #2d4053;
   border-color: #444;
   color: #e0e0e0;
 }
 
 body.dark-mode .expand-collapse-btn {
-  background: #2a2a2a;
+  background: #2d4053;
   border-color: #444;
 }
 body.dark-mode .expand-collapse-btn::before,
@@ -3104,17 +3226,17 @@ body.dark-mode .expand-collapse-btn::after {
   border-color: #ccc;
 }
 body.dark-mode .expand-collapse-btn:hover {
-  background: #333;
+  background: #33495f;
 }
 
 body.dark-mode .import-btn {
-  background: #2a2a2a;
+  background: #2d4053;
   color: #e0e0e0;
   border-color: #444;
 }
 body.dark-mode .import-btn:hover {
-  background: #333;
-  border-color: #6aa84f;
+  background: #33495f;
+  border-color: #4f9ac2;
 }
 
 /* ===== QUIZ PYQ TAG ===== */
@@ -3389,7 +3511,7 @@ body.dark-mode #aiQuizModal > div:nth-of-type(3) {
 
 body.dark-mode #toggleQuizLangBtn,
 body.dark-mode #quizModeSelect {
-  background: #26382b !important;
+  background: #263b52 !important;
   border-color: #4a6952 !important;
   color: #d9ebdd !important;
 }
@@ -3423,7 +3545,7 @@ body.dark-mode .ai-quiz-wrapper .quiz-opt-label:has(input:checked) {
 }
 
 body.dark-mode .ai-quiz-wrapper .explanation {
-  background: #203d29 !important;
+  background: #203d54 !important;
   color: #a9e1b2 !important;
 }
 
