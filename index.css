@@ -245,7 +245,7 @@ body {
   right: 0;
   height: 72px;
   z-index: 10010;
-  background: var(--bg-panel);
+  background: rgba(255, 255, 255, 0.78);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-soft);
@@ -1345,10 +1345,10 @@ body.dark-mode .study-explanation {
   position:relative;
   min-height:100vh;
   background:
-    radial-gradient(circle at 50% -10%, rgba(255, 255, 255, 0.96), transparent 42%),
-    linear-gradient(rgba(91, 117, 103, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(91, 117, 103, 0.07) 1px, transparent 1px),
-    linear-gradient(180deg, #e9f0eb 0%, #e0e9e2 100%);
+    radial-gradient(circle at 50% -10%, rgba(255, 255, 255, 0.72), transparent 42%),
+    linear-gradient(rgba(71, 85, 105, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(71, 85, 105, 0.16) 1px, transparent 1px),
+    linear-gradient(180deg, #e5eee8 0%, #d8e4dc 100%);
   background-size: auto, 28px 28px, 28px 28px, auto;
 }
 #canvas {
@@ -1455,9 +1455,8 @@ body.dark-mode .node.drop-after {
   font-size: 14px;
   white-space: nowrap;
   color: #17352a;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.08)),
-    var(--node-color, #e6f2e9);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.08));
+  background-color: color-mix(in srgb, var(--node-color, #e6f2e9) 88%, #334155);
   border: 1px solid rgba(76, 113, 91, 0.42);
   box-shadow:
     0 8px 18px rgba(31, 70, 48, 0.12),
@@ -2696,7 +2695,12 @@ body.dark-mode {
 }
 
 body.dark-mode #canvas {
-  background: #0f1720;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(92, 124, 112, 0.16), transparent 42%),
+    linear-gradient(rgba(148, 163, 184, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.09) 1px, transparent 1px),
+    linear-gradient(180deg, #162229 0%, #0f1720 100%);
+  background-size: auto, 28px 28px, 28px 28px, auto;
 }
 
 body.dark-mode .toolbar {
