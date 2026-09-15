@@ -2413,8 +2413,6 @@ body.dark-mode .node.drop-after {
   background: rgba(240, 247, 238, 0.9);
   border: 1px solid rgba(119, 156, 116, 0.22);
   border-radius: 12px;
-  max-height: 320px;
-  overflow: auto;
 }
 
 .note-viewer-body .search-match {
