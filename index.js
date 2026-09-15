@@ -1837,9 +1837,10 @@ el.ondragover = e => {
 h.innerHTML = `
   <div class="node-body">
     <div class="node-body">
-  <span class="node-text">${nodeLabel}</span>
-  ${renderExamBadge(n)}${renderQuizBadge(n)}
-</div>
+      <span class="node-text">${nodeLabel}</span>
+      ${!hiddenInQuiz && n.note ? '<span class="node-note-pill" title="Note available">📝 Note</span>' : ''}
+      ${renderExamBadge(n)}${renderQuizBadge(n)}
+    </div>
   </div>
   <button class="menu-btn${quizMode ? " quiz-disabled" : ""}">⋮</button>
 `;
