@@ -95,11 +95,11 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #69c7f5 0%, #258bd1 100%);
   color: #ffffff;
   font-size: 11px;
   font-weight: 700;
-  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.22);
+  box-shadow: 0 8px 18px rgba(37, 139, 209, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.7);
   cursor: pointer;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
@@ -107,7 +107,7 @@ body {
 
 .note-icon:hover {
   transform: translateY(-1px) scale(1.02);
-  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.28);
+  box-shadow: 0 10px 22px rgba(37, 139, 209, 0.36);
 }
 
 /* ===== Tooltip ===== */
@@ -2313,13 +2313,13 @@ body.dark-mode .node.drop-after {
 .note-viewer {
   position: absolute;
   width: 420px;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  background: linear-gradient(180deg, #f8fbf6 0%, #eef7ee 100%);
   border-radius: 16px;
   padding: 14px;
   border: 1px solid rgba(148, 163, 184, 0.35);
   box-shadow:
     0 16px 36px rgba(15, 23, 42, 0.14),
-    0 2px 8px rgba(37, 99, 235, 0.08);
+    0 2px 8px rgba(76, 141, 82, 0.08);
   z-index: 9000;
   font-family: "Segoe UI", sans-serif;
   display: flex;
@@ -2410,8 +2410,8 @@ body.dark-mode .node.drop-after {
   word-break: break-word;
   margin: 0;
   padding: 10px 10px 4px;
-  background: rgba(248, 250, 252, 0.8);
-  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(240, 247, 238, 0.9);
+  border: 1px solid rgba(119, 156, 116, 0.22);
   border-radius: 12px;
   max-height: 320px;
   overflow: auto;
@@ -2485,7 +2485,7 @@ body.dark-mode .node.drop-after {
 }
 
 .note-viewer-body a {
-  color: #2563eb;
+  color: #3d7a3d;
   text-decoration: underline;
 }
 
@@ -3064,9 +3064,10 @@ body.dark-mode .youtube-editor,
 body.dark-mode .exam-popup,
 body.dark-mode .filter-dropdown-menu,
 body.dark-mode .exam-test-modal {
-  background: #1e1e1e;
-  border-color: #333;
+  background: #1a261f;
+  border-color: #395744;
   color: #e0e0e0;
+  box-shadow: 0 16px 36px rgba(10, 19, 16, 0.4), 0 2px 8px rgba(91, 148, 98, 0.12);
 }
 
 body.dark-mode .note-viewer-header span,
@@ -3079,13 +3080,68 @@ body.dark-mode .filter-title {
 
 body.dark-mode .note-viewer-body,
 body.dark-mode .exam-popup-body {
-  color: #cccccc;
+  color: #e5f5ea;
+  background: #1e3129;
+  border-color: rgba(129, 177, 127, 0.28);
+}
+
+body.dark-mode .note-viewer {
+  background: linear-gradient(180deg, #202c35 0%, #172229 100%);
+  border-color: rgba(105, 199, 245, 0.32);
+  box-shadow: 0 18px 42px rgba(2, 8, 12, 0.58), 0 2px 10px rgba(37, 139, 209, 0.16);
+}
+
+body.dark-mode .note-viewer.arrow-left::before {
+  border-color: transparent #435763 transparent transparent;
+}
+
+body.dark-mode .note-viewer.arrow-left::after {
+  border-color: transparent #202c35 transparent transparent;
+}
+
+body.dark-mode .note-viewer.arrow-right::before {
+  border-color: transparent transparent transparent #435763;
+}
+
+body.dark-mode .note-viewer.arrow-right::after {
+  border-color: transparent transparent transparent #202c35;
+}
+
+body.dark-mode .note-viewer-body {
+  color: #dcecf2;
+  background: rgba(12, 24, 31, 0.58);
+  border-color: rgba(105, 199, 245, 0.2);
+}
+
+body.dark-mode .note-viewer-body blockquote {
+  background: #263841;
+  border-left-color: #55aee6;
+  color: #dcecf2;
+}
+
+body.dark-mode .note-viewer-body code {
+  background: rgba(105, 199, 245, 0.12);
+  color: #bfe8fa;
+}
+
+body.dark-mode .note-viewer-body pre {
+  background: #0d171d;
+  color: #dcecf2;
+}
+
+body.dark-mode .note-viewer-body a {
+  color: #69c7f5;
+}
+
+body.dark-mode .note-viewer-header button:hover {
+  background: rgba(105, 199, 245, 0.14);
+  color: #ffffff;
 }
 
 body.dark-mode .note-editor-textarea {
-  background: #2a2a2a;
-  color: #e0e0e0;
-  border-color: #444;
+  background: #22362d;
+  color: #eaf9ef;
+  border-color: #4f6c5e;
 }
 
 body.dark-mode .note-editor-actions button,
@@ -3095,9 +3151,9 @@ body.dark-mode .exam-popup-header button,
 body.dark-mode .exam-test-header-actions button,
 body.dark-mode .exam-test-footer button,
 body.dark-mode .exam-section-btn {
-  background: #2a2a2a;
-  color: #e0e0e0;
-  border-color: #444;
+  background: #20372d;
+  color: #eaf9ef;
+  border-color: #4b665b;
 }
 
 body.dark-mode .note-editor-actions button:hover,

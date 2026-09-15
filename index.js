@@ -1838,7 +1838,6 @@ h.innerHTML = `
   <div class="node-body">
     <div class="node-body">
       <span class="node-text">${nodeLabel}</span>
-      ${!hiddenInQuiz && n.note ? '<span class="node-note-pill" title="Note available">📝 Note</span>' : ''}
       ${renderExamBadge(n)}${renderQuizBadge(n)}
     </div>
   </div>
