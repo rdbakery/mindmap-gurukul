@@ -441,6 +441,22 @@ function isInFocusedPath(node, focusId) {
 /* ================= INDEXED DB ================= */
 const DB_NAME="mindmapDB", STORE="files";
 
+function stripLayoutState(node) {
+  if (!node || typeof node !== "object") return node;
+
+  const cleanNode = { ...node };
+  delete cleanNode._h;
+  delete cleanNode._x;
+  delete cleanNode._y;
+  delete cleanNode._realH;
+  delete cleanNode._realW;
+  cleanNode.children = Array.isArray(node.children)
+    ? node.children.map(stripLayoutState)
+    : [];
+
+  return cleanNode;
+}
+
 function openDB(){
   return new Promise(res=>{
     const r=indexedDB.open(DB_NAME,1);
@@ -455,7 +471,7 @@ async function saveMap(id,name,data){
   const db=await openDB();
   db.transaction(STORE,"readwrite")
     .objectStore(STORE)
-    .put({key:`mindmaps/${id}.json`,id,name,json:data});
+    .put({key:`mindmaps/${id}.json`,id,name,json:stripLayoutState(data)});
 }
 
 async function loadMap(id){
@@ -464,7 +480,7 @@ async function loadMap(id){
     db.transaction(STORE)
       .objectStore(STORE)
       .get(`mindmaps/${id}.json`)
-      .onsuccess=e=>res(e.target.result?.json);
+      .onsuccess=e=>res(stripLayoutState(e.target.result?.json));
   });
 }
 
@@ -1923,7 +1939,7 @@ ${APP_CONFIG.features.youtube ? (isAdmin
 if (APP_CONFIG.features.notes && n.note && !hiddenInQuiz) {
   const noteIcon = document.createElement("div");
   noteIcon.className = "note-icon";
-  noteIcon.textContent = "📝";
+  noteIcon.textContent = "✏️";
 
   noteIcon.onclick = (e) => {
     e.stopPropagation();
