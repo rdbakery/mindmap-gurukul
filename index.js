@@ -1658,7 +1658,7 @@ function renderTree() {
   // 🔥 STEP 1: TEMP DRAW (for measuring)
   computeH(activeRenderTree);
   layout(activeRenderTree, 80, activeRenderTree._h / 2 + 40);
-  draw(activeRenderTree, 0);
+  draw(activeRenderTree, 0, false);
 
   // 🔥 STEP 2: MEASURE REAL SIZE
   measureNodes();
@@ -1776,7 +1776,7 @@ function renderQuizBadge(node) {
   `;
 }
 
-function draw(n, depth){
+function draw(n, depth, drawConnectors = true){
 const el = document.createElement("div");
 const studyTodoDate = studyTodoDates.get(n.id);
 const hiddenInQuiz = isNodeHiddenInQuiz(n);
@@ -2057,13 +2057,15 @@ function closeNoteViewers(){
   if (n.collapsed) return;
 
   n.children.forEach(c => {
-    drawLine(
-      n._x + n._realW,
-      n._y,
-      c._x,
-      c._y
-    );
-    draw(c, depth + 1);
+    if (drawConnectors) {
+      drawLine(
+        n._x + n._realW,
+        n._y,
+        c._x,
+        c._y
+      );
+    }
+    draw(c, depth + 1, drawConnectors);
   });
 }
 

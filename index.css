@@ -1597,7 +1597,7 @@ body.dark-mode .node.drop-after {
   white-space: nowrap;
   color: #17352a;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.12));
-  background-color: color-mix(in srgb, var(--node-color, #e6f2e9) 88%, #334155);
+  background-color: color-mix(in srgb, var(--node-color, #e6f2e9) 80%, #334155);
   border: 1px solid rgba(76, 113, 91, 0.42);
   box-shadow:
     0 8px 18px rgba(31, 70, 48, 0.12),
