@@ -1595,6 +1595,7 @@ body.dark-mode .node.drop-after {
   border-radius: 14px;
   font-size: 14px;
   white-space: nowrap;
+  width: max-content;
   color: #17352a;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.12));
   background-color: color-mix(in srgb, var(--node-color, #e6f2e9) 80%, #334155);
@@ -2522,13 +2523,6 @@ body.dark-mode .node.drop-after {
   .toolbar input[type="search"] {
     flex: 1;
     min-width: 120px;
-  }
-}
-
-@media (max-width: 768px) {
-  .node {
-    font-size: 12px;
-    padding: 6px 8px;
   }
 }
 

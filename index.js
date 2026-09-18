@@ -823,7 +823,7 @@ currentMap={
 
   refreshSelector();
   refreshTestSelector();
-  render();
+  await render();
   showBackupWarningPopup();
 })();
 
@@ -1627,20 +1627,26 @@ function layout(n, x, y) {
 
 
 function resize(n){
+  const canvasEl = document.getElementById("canvas");
+  const svgEl = document.getElementById("svg");
+  if (!canvasEl || !svgEl || !n) return;
+
   let mx=0,my=0;
   (function w(n){
-    mx=Math.max(mx,n._x+320);
-    my=Math.max(my,n._y+160);
-    n.children.forEach(w);
+    const x = Number.isFinite(n._x) ? n._x : 80;
+    const y = Number.isFinite(n._y) ? n._y : 40;
+    mx=Math.max(mx,x+320);
+    my=Math.max(my,y+160);
+    (n.children || []).forEach(w);
   })(n);
 
   mx = Math.max(mx, window.innerWidth);
   my = Math.max(my, window.innerHeight - 64);
 
-  canvas.style.width=mx+"px";
-  canvas.style.height=my+"px";
-  svg.setAttribute("width",mx);
-  svg.setAttribute("height",my);
+  canvasEl.style.width=mx+"px";
+  canvasEl.style.height=my+"px";
+  svgEl.setAttribute("width",mx);
+  svgEl.setAttribute("height",my);
 }
 
 /* ================= RENDER ================= */
