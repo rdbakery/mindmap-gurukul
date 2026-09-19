@@ -67,19 +67,19 @@ function isNodeHiddenInQuiz(node) {
 /* ===== Node Color by Level ===== */
 function nodeColor(depth) {
   const palette = [
-    "#c8c7e8",
-    "#bdd7ef",
-    "#c2ddcb",
-    "#bfdcdf",
-    "#c3e7dd",
-    "#b2ddd5",
-    "#cce5b9",
-    "#c8e4d4",
-    "#c7e5f0",
-    "#c0e5d2",
-    "#cbe0d2",
-    "#d9e3c8",
-  ];
+  "#7c79da",  // Purple
+  "#6dc98c",  // Green
+  "#74afe7",  // Blue
+  "#a8ea75",  // Lime
+  "#77d0da",  // Cyan
+  "#bde081",  // Yellow-green
+  "#73c8e7",  // Sky Blue
+  "#78ecb0",  // Mint
+  "#7c79da",  // Purple
+  "#8cdda7",  // Green
+  "#71ddc9",  // Teal
+  "#6ee2c1"   // Aqua
+];
 
 
 
